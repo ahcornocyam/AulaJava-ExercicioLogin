@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+>      
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+	<title>Pagina de login do Usuario</title>
+</h:head> 
+<h:body> 
+	<div>
+		<h1>Página de Login</h1>
+	</div>
+	<div>
+		<h:form>
+			<label>login</label>
+			<h:inputText value="#{loginBean.user}" />
+			<h:commandButton action="#{loginBean.redirect()}" value="OK" />
+			#{loginBean.user}
+		</h:form>
+	</div>
+</h:body> 
+</html>
